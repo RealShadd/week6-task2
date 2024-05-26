@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5% 1fr 30%;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  background-color: transparent;
+}
+.decore {
+  z-index: 0;
+  grid-area: 1/2;
+  padding-left: 60%;
+}
+.header-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 1;
+}
+.logo {
+  padding-top: 2%;
+  padding-right: 10%;
+  margin-left: 8%;
+}
+nav {
+  justify-content: center;
+  width: 60%;
+  height: 50%;
+  margin-top: 2%;
+}
+.flex-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 1%;
+  font-weight: 600;
+}
+.signin {
+  justify-content: end;
+  margin-top: 2%;
+  height: 5vh;
+  width: 6vw;
+  background-color: transparent;
+  border-radius: 8%;
+}
+.photo {
+  width: 783.87px;
+  height: 764px;
+  z-index: 1;
+  grid-area: 1/2;
+}
+.ad-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+.top-ad {
+  color: rgba(228, 75, 37, 0.839);
+  font-weight: 600;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.mid-ad {
+  margin-left: 15%;
+  padding-bottom: 10%;
+  font-weight: 900;
+  font-size: 60px;
+  width: 80%;
+}
+.bottom-ad {
+  margin-left: 15%;
+  width: 78%;
+}
+.ad-button {
+  height: 8vh;
+  width: 11vw;
+  background-color: orange;
+  border-radius: 8%;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  color: white;
+  margin-left: 15%;
+}
+header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 30vh;
+}
+.logofooter {
+  position: relative;
+  width: 10vw;
+  height: 7vh;
+  padding-top: 7%;
+  padding-left: 5%;
+}
+.company {
+  padding-top: 12%;
+  font-weight: 800;
+}
+.contact {
+  padding-top: 12%;
+  font-weight: 800;
+}
+.more {
+  padding-top: 12%;
+  font-weight: 800;
+}
+.company-info {
+  width: 5vw;
+}
+.contact-info {
+  width: 5vw;
+}
+.more-info {
+  width: 5vw;
+}
+.logo-text {
+  width: 15vw;
+  padding-left: 5%;
+}
